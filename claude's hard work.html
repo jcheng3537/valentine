@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💜</title>
+    <style>
+        @font-face {
+            font-family: 'MyHandwriting';
+            src: url('data:font/ttf;base64,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') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'MyHandwriting', 'Comic Sans MS', cursive, sans-serif;
+            background: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        .screen {
+            display: none;
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        .fade-out {
+            animation: fadeOut 0.6s ease forwards;
+        }
+
+        button {
+            font-family: 'MyHandwriting', 'Comic Sans MS', cursive, sans-serif;
+            font-size: 20px;
+            padding: 15px 40px;
+            border: 2px solid black;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background: rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+
+        #enterScreen button {
+            background: #e8d7e8;
+            font-size: 22px;
+            padding: 18px 50px;
+            border: none;
+        }
+
+        #enterScreen button:hover {
+            background: #d4c0d4;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .text-line {
+            font-size: 24px;
+            margin: 15px 0;
+            opacity: 0;
+            animation: slideIn 0.5s ease forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nervous-text {
+            font-size: 18px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .drumroll-text {
+            font-size: 28px;
+            margin: 30px 0;
+        }
+
+        .question-box {
+            background: #e8d7e8;
+            border: none;
+            padding: 30px 20px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .question-box h1 {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .choice-button {
+            font-size: 18px;
+            padding: 12px 30px;
+            min-width: 120px;
+            background: white;
+            border: none;
+        }
+
+        .choice-button:hover {
+            background: #f5f5f5;
+        }
+
+        #noButton {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .dodge-text {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #666;
+            opacity: 0;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .confetti-heart {
+            position: fixed;
+            font-size: 30px;
+            pointer-events: none;
+            z-index: 1000;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .options-grid {
+            display: grid;
+            gap: 15px;
+            margin: 25px 0;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .option-button {
+            font-size: 18px;
+            padding: 15px 20px;
+            text-align: left;
+            width: 100%;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .option-button:hover {
+            background: #f0f0f0;
+            transform: translateX(5px);
+        }
+
+        .long-text {
+            font-size: 22px;
+            line-height: 1.6;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .text-input-container {
+            margin: 20px 0;
+        }
+
+        .text-input {
+            font-family: 'MyHandwriting', 'Comic Sans MS', cursive, sans-serif;
+            font-size: 18px;
+            padding: 12px 15px;
+            border: 2px solid black;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 350px;
+            margin-top: 10px;
+        }
+
+        .finish-button {
+            margin-top: 30px;
+            background: #e8d7e8;
+            font-size: 18px;
+            padding: 12px 35px;
+            border: none;
+        }
+
+        .finish-button:hover {
+            background: #d4c0d4;
+        }
+
+        /* Hidden Google Form */
+        iframe {
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            .text-line {
+                font-size: 20px;
+            }
+            
+            .question-box h1 {
+                font-size: 26px;
+            }
+
+            .long-text {
+                font-size: 19px;
+            }
+
+            button {
+                font-size: 18px;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Screen 1: Enter Button -->
+        <div class="screen active" id="enterScreen">
+            <button onclick="startExperience()">enter</button>
+        </div>
+
+        <!-- Screen 2: Nervous text -->
+        <div class="screen" id="nervousScreen">
+            <div class="text-line nervous-text">(currently mega nervous but also cheesing REALLY hard...)</div>
+        </div>
+
+        <!-- Screen 3: Drumroll -->
+        <div class="screen" id="drumrollScreen">
+            <div class="text-line drumroll-text">drumroll...</div>
+        </div>
+
+        <!-- Screen 4: The Question -->
+        <div class="screen" id="questionScreen">
+            <div class="question-box">
+                <h1>will you be my valentine?</h1>
+                <div class="button-container">
+                    <button class="choice-button" id="noButton" onclick="handleNo()">no :(</button>
+                    <button class="choice-button" onclick="handleYes()">yes :)</button>
+                </div>
+                <div id="dodgeText" class="dodge-text"></div>
+            </div>
+        </div>
+
+        <!-- Screen 5: No Response -->
+        <div class="screen" id="noScreen"></div>
+
+        <!-- Screen 6: Yes Response - Part 1 -->
+        <div class="screen" id="yesScreen1"></div>
+
+        <!-- Screen 7: Yes Response - Confession -->
+        <div class="screen" id="yesScreen2"></div>
+
+        <!-- Screen 8: Long text -->
+        <div class="screen" id="longTextScreen"></div>
+
+        <!-- Screen 9: Options -->
+        <div class="screen" id="optionsScreen"></div>
+
+        <!-- Screen 10: Response to choice -->
+        <div class="screen" id="responseScreen"></div>
+
+        <!-- Screen 11: Finish -->
+        <div class="screen" id="finishScreen">
+            <div class="text-line" style="font-size: 28px;">thanks for being here :))</div>
+            <button class="finish-button" onclick="restart()">back to start</button>
+        </div>
+    </div>
+
+    <!-- Hidden Google Form iframe -->
+    <iframe id="hiddenForm" name="hiddenFrame"></iframe>
+
+    <script>
+        let noClickCount = 0;
+        let currentScreen = 'enterScreen';
+
+        function showScreen(screenId, delay = 0) {
+            setTimeout(() => {
+                const current = document.getElementById(currentScreen);
+                const next = document.getElementById(screenId);
+                
+                if (current) {
+                    current.classList.remove('active');
+                }
+                
+                if (next) {
+                    next.classList.add('active');
+                    currentScreen = screenId;
+                }
+            }, delay);
+        }
+
+        function startExperience() {
+            showScreen('nervousScreen');
+            setTimeout(() => {
+                showScreen('drumrollScreen');
+            }, 3000);
+            setTimeout(() => {
+                showScreen('questionScreen');
+            }, 5500);
+        }
+
+        function handleNo() {
+            const button = document.getElementById('noButton');
+            const dodgeText = document.getElementById('dodgeText');
+            
+            if (noClickCount === 0) {
+                // First click - move button
+                const randomX = (Math.random() - 0.5) * 100;
+                const randomY = (Math.random() - 0.5) * 100;
+                button.style.transform = `translate(${randomX}px, ${randomY}px)`;
+                noClickCount++;
+            } else if (noClickCount === 1) {
+                // Second click - move again with text
+                const randomX = (Math.random() - 0.5) * 120;
+                const randomY = (Math.random() - 0.5) * 120;
+                button.style.transform = `translate(${randomX}px, ${randomY}px)`;
+                dodgeText.textContent = 'you sure? 👀';
+                noClickCount++;
+            } else {
+                // Third click - actually show no response
+                showNoResponse();
+            }
+        }
+
+        function showNoResponse() {
+            const noScreen = document.getElementById('noScreen');
+            const lines = [
+                'nooooooooooooooooooooo...',
+                'jkjk it\'s all chill',
+                'all is well',
+                'you may exit now'
+            ];
+            
+            noScreen.innerHTML = '';
+            showScreen('noScreen');
+            
+            lines.forEach((line, index) => {
+                setTimeout(() => {
+                    const div = document.createElement('div');
+                    div.className = 'text-line';
+                    div.textContent = line;
+                    div.style.animationDelay = '0s';
+                    noScreen.appendChild(div);
+                }, index * 1500);
+            });
+        }
+
+        function handleYes() {
+            createConfetti();
+            showYesResponse();
+        }
+
+        function createConfetti() {
+            const hearts = ['💜', '💜', '💜', '💜', '💜'];
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'confetti-heart';
+                    heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                    heart.style.animationDelay = '0s';
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => heart.remove(), 5000);
+                }, i * 50);
+            }
+        }
+
+        function showYesResponse() {
+            const yesScreen1 = document.getElementById('yesScreen1');
+            const lines1 = [
+                'yay!!!',
+                'i\'m so very happy',
+                '(you seriously have no clue)'
+            ];
+            
+            yesScreen1.innerHTML = '';
+            showScreen('yesScreen1');
+            
+            lines1.forEach((line, index) => {
+                setTimeout(() => {
+                    const div = document.createElement('div');
+                    div.className = 'text-line';
+                    div.textContent = line;
+                    yesScreen1.appendChild(div);
+                }, index * 1500);
+            });
+
+            // After part 1, show confession
+            setTimeout(() => {
+                showConfession();
+            }, (lines1.length * 1500) + 2000);
+        }
+
+        function showConfession() {
+            const yesScreen2 = document.getElementById('yesScreen2');
+            const lines2 = [
+                'i do have a confession though...',
+                'i don\'t actually know what\'s next...'
+            ];
+            
+            yesScreen2.innerHTML = '';
+            showScreen('yesScreen2');
+            
+            lines2.forEach((line, index) => {
+                setTimeout(() => {
+                    const div = document.createElement('div');
+                    div.className = 'text-line';
+                    div.textContent = line;
+                    yesScreen2.appendChild(div);
+                }, index * 2500);
+            });
+
+            setTimeout(() => {
+                showLongText();
+            }, (lines2.length * 2500) + 2000);
+        }
+
+        function showLongText() {
+            const longTextScreen = document.getElementById('longTextScreen');
+            longTextScreen.innerHTML = '<div class="text-line long-text">you see, if i were over there, i\'d ask you out on a proper date!<br><br>but alas... you\'re too far away and i don\'t know how to proceed :(</div>';
+            showScreen('longTextScreen');
+
+            setTimeout(() => {
+                showOptions();
+            }, 7000);
+        }
+
+        function showOptions() {
+            const optionsScreen = document.getElementById('optionsScreen');
+            optionsScreen.innerHTML = `
+                <div class="text-line" style="margin-bottom: 10px;">so, i'll let you decide what's next:</div>
+                <div class="options-grid">
+                    <button class="option-button" onclick="handleChoice('A', 'nothing.')">A) nothing.</button>
+                    <button class="option-button" onclick="handleChoice('B', 'talk and sort stuff out')">B) talk and sort stuff out</button>
+                    <button class="option-button" onclick="handleChoice('C', 'do a one-and-done themed activity and forget this ever happened LOL')">C) do a one-and-done themed activity and forget this ever happened LOL</button>
+                    <button class="option-button" onclick="showOptionD()">D) something else (you tell me)</button>
+                </div>
+            `;
+            showScreen('optionsScreen');
+        }
+
+        function showOptionD() {
+            const optionsScreen = document.getElementById('optionsScreen');
+            optionsScreen.innerHTML = `
+                <div class="text-input-container">
+                    <div style="font-size: 18px; margin-bottom: 10px;">tell me your idea(s):</div>
+                    <input type="text" class="text-input" id="optionDInput" placeholder="type here...">
+                    <br><br>
+                    <button onclick="submitOptionD()" style="margin-top: 15px;">submit</button>
+                </div>
+            `;
+        }
+
+        function submitOptionD() {
+            const input = document.getElementById('optionDInput').value;
+            handleChoice('D', input || 'something else');
+        }
+
+        function handleChoice(option, text) {
+            // Submit to Google Form
+            submitToGoogleForm(option, text);
+
+            // Show response
+            const responses = {
+                'A': 'alrighty. noted.',
+                'B': 'okie dokie!',
+                'C': 'interesting... not what i was expecting, but we can make it happen',
+                'D': 'okie dokie!'
+            };
+
+            const responseScreen = document.getElementById('responseScreen');
+            responseScreen.innerHTML = `
+                <div class="text-line">${responses[option]}</div>
+                <button class="finish-button" onclick="showFinish()">finish</button>
+            `;
+            showScreen('responseScreen');
+        }
+
+        function submitToGoogleForm(option, text) {
+            const FORM_ID = '1FAIpQLSej292uz3cLtmNZoj0nFcGv2uRB1zkpFMr-LQPEAAs7OUAQ9w';
+            const OPTION_ENTRY_ID = 'entry.1314040120';
+            const TEXT_ENTRY_ID = 'entry.2113610854';
+            
+            const formUrl = `https://docs.google.com/forms/d/e/${FORM_ID}/formResponse?${OPTION_ENTRY_ID}=${encodeURIComponent(option)}&${TEXT_ENTRY_ID}=${encodeURIComponent(text)}&submit=Submit`;
+            
+            const iframe = document.getElementById('hiddenForm');
+            iframe.src = formUrl;
+        }
+
+        function showFinish() {
+            showScreen('finishScreen');
+        }
+
+        function restart() {
+            // Reset everything
+            noClickCount = 0;
+            document.getElementById('noButton').style.transform = '';
+            document.getElementById('dodgeText').textContent = '';
+            showScreen('enterScreen');
+        }
+    </script>
+</body>
+</html>
